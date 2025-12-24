@@ -1,0 +1,120 @@
+/* ================= General Body ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0f2a;
+    color: #e5e7eb;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ================= Links ================= */
+a {
+    text-decoration: none;
+    color: #22d3ee;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #8b5cf6;
+}
+
+/* ================= Container ================= */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ================= Headers ================= */
+h1 {
+    font-size: 2.5rem;
+    color: #8b5cf6;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px #22d3ee;
+}
+h2 {
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+/* ================= Navigation Bar ================= */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.navbar a {
+    padding: 10px 20px;
+    background: #8b5cf6;
+    border-radius: 8px;
+    color: #0b0f2a;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.navbar a:hover {
+    background: #22d3ee;
+    color: #0b0f2a;
+}
+
+/* ================= Boxes / Cards ================= */
+.box {
+    background: #1b2340;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.6);
+}
+
+/* ================= Buttons ================= */
+button {
+    padding: 12px 25px;
+    background: #8b5cf6;
+    border: none;
+    border-radius: 8px;
+    color: #0b0f2a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover {
+    background: linear-gradient(90deg, #8b5cf6, #c084fc);
+    transform: scale(1.05);
+}
+
+/* ================= Inputs and Textarea ================= */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0b172a;
+    color: #e5e7eb;
+    transition: all 0.2s;
+}
+input:focus, textarea:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 5px #22d3ee;
+    outline: none;
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 650px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .navbar a { padding: 8px 15px; font-size: 0.9rem; }
+    .box { padding: 15px; }
+}
+
+/* ================= Smooth scrolling ================= */
+html {
+    scroll-behavior: smooth;
+}
